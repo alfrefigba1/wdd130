@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An online quiz about HTML and CSS.">
+    <meta name="author" content="Alfred Aondoaver Igba">
+    <title>HTML and CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <main>
+        <form>
+            <h1>HTML and CSS Quiz</h1>
+
+            <p>Test your knowledge of HTML and CSS by answering the questions below.</p>
+
+            <fieldset>
+                <legend>Quiz Questions</legend>
+
+                <!-- Question 1 -->
+                <div class="question">
+                    <label for="q1">
+                        1. What is the full meaning of HTML?
+                    </label>
+                    <input type="text" id="q1" name="q1" required>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question">
+                    <label for="q2">
+                        2. What is the purpose of CSS in a web page?
+                    </label>
+                    <textarea id="q2" name="q2" rows="4" required></textarea>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question">
+                    <label for="q3">
+                        3. Which HTML element is used to create a hyperlink?
+                    </label>
+                    <select id="q3" name="q3" required>
+                        <option value="" selected disabled>Choose One ...</option>
+                        <option value="img">&lt;img&gt;</option>
+                        <option value="a">&lt;a&gt;</option>
+                        <option value="p">&lt;p&gt;</option>
+                        <option value="link">&lt;link&gt;</option>
+                    </select>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question">
+                    <label for="q4">
+                        4. What is the bottom margin given this declaration?
+                    </label>
+                    <p class="code">margin: 10px 5px 15px;</p>
+
+                    <input type="number" id="q4" name="q4" min="0" required>
+                </div>
+
+                <button type="submit">Submit Quiz</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
